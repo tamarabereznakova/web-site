@@ -1,250 +1,326 @@
 <!DOCTYPE html>
-  <html lang="sk">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="design.css">
-      <title>tamarabereznakova</title>
-    </head>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <title>Tamara Berezňáková</title>
+    <meta name="description" content="Cybersecurity student at TUKE — interested in software engineering, networking and security. Built projects in Java, SQL, and more.">
+    <meta name="author" content="Tamara Berezňáková">
 
-    <body>
-      <div id="loader">
-        <div class="loader-content">
-          <span class="loader-logo">TB</span>
-          <p>Loading...</p>
+    <!-- Open Graph (náhľad pri zdieľaní linku) -->
+    <meta property="og:title" content="Tamara Berezňáková">
+    <meta property="og:description" content="Cybersecurity student · software · networking · security">
+    <meta property="og:type" content="website">
+
+    <!-- favicon ako inline SVG — nevyžaduje žiadny súbor -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%23c084fc'/><stop offset='100%25' stop-color='%23f472b6'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='%230d0a14'/><text x='50' y='68' font-family='Georgia,serif' font-style='italic' font-size='52' text-anchor='middle' fill='url(%23g)'>TB</text></svg>">
+  </head>
+
+  <body>
+
+    <!-- loader -->
+    <div id="loader">
+      <div class="loader-content">
+        <span class="loader-logo">TB</span>
+        <p>Loading...</p>
+      </div>
+    </div>
+
+    <!-- nav -->
+    <nav class="nav">
+      <a href="#intro">intro</a>
+      <a href="#skills">skills</a>
+      <a href="#projects">projects</a>
+      <a href="#certificates">certificates</a>
+      <a href="#kontakt">contact</a>
+    </nav>
+
+    <!-- hero -->
+    <section style="padding: 4rem 1rem 1rem;" class="fade-in">
+      <span class="hero-tag">studying security, building things, figuring things out</span>
+      <h1 class="hero-title">Tamara Berezňáková</h1>
+    </section>
+
+    <!-- intro -->
+    <section id="intro" class="fade-in">
+      <div class="section-box">
+        <p>Hi, I'm Tamara — a second-year Cybersecurity student at the Technical University of Košice. I'm drawn to software engineering and internet security, and I enjoy finding creative ways to solve problems.</p>
+        <p>Computer science has always fascinated me. I learn a lot through school, but also on my own — through platforms like Cisco and TryHackMe.</p>
+      </div>
+
+      <div class="section-box">
+        <div>
+          <p>My TryHackMe profile I am working on all the time.</p>
+          <a href="https://tryhackme.com/p/heartway" target="_blank" class="project-link">View profile →</a>
         </div>
       </div>
-      <hr>
-      <nav class="nav">
-        <a href="#intro">INTRODUCTION</a>
-        <a href="#skills">SKILLS</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#kontakt">CONTACT ME</a>
-      </nav>
-      <hr>
+    </section>
 
-      <br>
-      <br>
-      <br>
-      <br>
+    <!-- skills accordion -->
+    <section id="skills" class="fade-in" style="max-width: 860px; margin: 0 auto; padding: 0 1rem;">
 
-      <section class="fade-in">
-        <h1>This site was created as a part of my programming journey – intended for professional use and job applications only.</h1>
-      </section>
-      <br>
-      <section id="intro" class="fade-in">
-        <div class="section-box">
-          <p>Hi, my name is Tamara. I’m currently studying (first-year student at the Technical University of Košice – Cybersecurity program) and hoping to become a programmer one day.</p>
-          <br>
-          <p>Computer science has always fascinated me – I love finding creative ways to solve problems and make the world a more beautiful place.</p>
-        </div>
-      </section>
-      <br>
-
-      <br>
-      <section id="skills" class="fade-in">
-        <div>
-          <h2>SKILLS & CERTIFICATES</h2>
-
-          <div class="skills-container-row">
-            <div class="soft-skills">
-              <h3>Soft Skills</h3>
-              <ul>
-                <li>✅ Communication</li>
-                <li>✅ Teamwork</li>
-                <li>✅ Leadership & Task Delegation</li>
-                <li>✅ Problem-Solving Under Pressure</li>
-                <li>✅ Creativity & Critical Thinking</li>
-                <li>✅ Continuous Self-Development</li>
-              </ul>
-            </div>
-            <div class="technical-skills">
-              <h3>Technical Skills</h3>
-              <ul>
-                <li>💻 HTML5 – Basic</li>
-                <li>🎨 CSS – Basic</li>
-                <li>🧾 SQL – Beginner</li>
-                <li>☕ Java – Beginner</li>
-                <li>🐍 Python – Intermediate</li>
-                <li>🧮 C – Intermediate</li>
-                <li>📽️ DaVinci Resolve – Intermediate</li>
-                <li>🖌️ Adobe Photoshop & Lightroom – Intermediate</li>
-                <li>📊 Microsoft Excel – Expert</li>
-                <li>📄 Microsoft Word & PowerPoint – Advanced</li>
-              </ul>
+      <div class="accordion">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span class="acc-title">Skills</span>
+          <span class="acc-arrow">&#8964;</span>
+        </button>
+        <div class="accordion-body">
+          <div class="acc-inner">
+            <div class="skills-container-row" style="padding: 0.5rem 0 1rem;">
+              <div class="soft-skills">
+                <h3>Soft Skills</h3>
+                <ul>
+                  <li>Communication & Teamwork</li>
+                  <li>Leadership & Task Delegation</li>
+                  <li>Problem-Solving Under Pressure</li>
+                  <li>Creativity & Critical Thinking</li>
+                  <li>System & Project Planning</li>
+                  <li>Continuous Self-Development</li>
+                </ul>
+              </div>
+              <div class="technical-skills">
+                <h3>Technical Skills</h3>
+                <ul>
+                  <li>Java, HTML, CSS, JavaScript <span class="skill-badge adv">Advanced</span></li>
+                  <li>Python, C</li>
+                  <li>SQL, DDL, DataGrip <span class="skill-badge adv">Advanced</span></li>
+                  <li>Microsoft Excel <span class="skill-badge exp">Expert</span></li>
+                  <li>Cisco Packet Tracer <span class="skill-badge adv">Advanced</span></li>
+                  <li>CCNA 1 + partial CCNA 2 <span class="skill-badge adv">Requirements met</span></li>
+                  <li>Cryptography & Network Security</li>
+                  <li>Algorithms, Graph Theory & Data Structures</li>
+                  <li>DaVinci Resolve, Photoshop & Lightroom</li>
+                </ul>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <p>Besides school I am also self-educating through online platforms such as Cisco and Simplilearn.</p>
-          <div class="slideshow-container">
-            <div class="slide fade">
-              <img src="images/certificates/cert1.jpg" alt="Introduction to cybersecurity">
-            </div>
+    <br><br>
 
-            <div class="slide fade">
-              <img src="images/certificates/cert2.jpg" alt="Certificate 2">
+    <section id="certificates" class="fade-in" style="max-width: 860px; margin: 0 auto; padding: 0 1rem;">
+      <div class="accordion">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span class="acc-title">Certificates</span>
+          <span class="acc-arrow">&#8964;</span>
+        </button>
+        <div class="accordion-body">
+          <div class="acc-inner">
+            <div class="slideshow-container" style="margin-top: 1rem;">
+              <div class="slide fade">
+                <img src="images/certificates/cert5.png" alt="Certificate 1">
             </div>
-
             <div class="slide fade">
-              <img src="images/certificates/cert3.jpg" alt="Introduction to SQL">
+              <img src="images/certificates/cert1.jpg" alt="Certificate 2">
             </div>
-
             <div class="slide fade">
-              <img src="https://tamarabereznakova.github.io/web-site/images/certificates/cert4.jpg" alt="Introduction to CISSP">
+              <img src="images/certificates/cert2.jpg" alt="Certificate 3">
             </div>
-            
+            <div class="slide fade">
+              <img src="images/certificates/cert3.jpg" alt="Certificate 4">
+            </div>
+            <div class="slide fade">
+              <img src="images/certificates/cert4.jpg" alt="Certificate 5">
+            </div>
             <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
             <a class="next" onclick="changeSlide(1)">&#10095;</a>
           </div>
-
-          <br>
-          <div style="text-align:center">
-            <span class="dot" onclick="setSlide(1)"></span> 
+          <div style="text-align:center; margin-top: 0.75rem; padding-bottom: 1rem;">
+            <span class="dot" onclick="setSlide(1)"></span>
             <span class="dot" onclick="setSlide(2)"></span>
             <span class="dot" onclick="setSlide(3)"></span>
             <span class="dot" onclick="setSlide(4)"></span>
+            <span class="dot" onclick="setSlide(5)"></span>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <br>
-      <br>
+    <br><br>
 
-      <section id="projects" class="fade-in">
-        <div class="section-box">
-          <h2>PROJECTS</h2>
-          <p>As part of a school project called “Hands Off”, I collaborated with OpenLab to experiment with remote-controlled applications.</p>
-          <div class="project-card">
-            <img src="https://about.gitlab.com/images/press/logo/png/gitlab-icon-rgb.png" alt="GitLab" class="project-icon">
-            <div>
-              <h3>OpenLab School Project</h3>
-              <p>MQTT game with server-client communication, mobile control & AI interaction.</p>
-              <a href="https://git.kpi.fei.tuke.sk/kpi/hands-off" target="_blank" class="project-link">View on KPI GitLab →</a>
+    <!-- projects accordion -->
+    <section id="projects" class="fade-in" style="max-width: 860px; margin: 0 auto; padding: 0 1rem;">
+
+      <div class="accordion">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span class="acc-title">Projects</span>
+          <span class="acc-arrow">&#8964;</span>
+        </button>
+        <div class="accordion-body">
+          <div class="acc-inner" style="padding-bottom: 0.5rem;">
+
+            <div class="project-card">
+              <img src="images/snake.png" alt="Slitherlink game" class="project-icon">
+              <div>
+                <h3>Slitherlink — online multiplayer game</h3>
+                <p>Built from scratch · Java, JS, HTML, CSS · multiple levels · live on Render</p>
+                <a href="https://slitherlinko.onrender.com/" target="_blank" class="project-link">Play →</a>
+              </div>
             </div>
-          </div>
-          <p>I am also training on TryHackMe to improve my creative problem-solving and cybersecurity skills.</p>
-          <div class="project-card">
-            <img src="https://cdn-1.webcatalog.io/catalog/tryhackme/tryhackme-icon-filled-256.png?v=1669863995747" alt="TryHackMe" class="project-icon">
-            <div>
-              <h3>TryHackMe Profile</h3>
-              <p>Solving CTFs, learning security & problem solving through hands-on labs.</p>
-              <a href="https://tryhackme.com/p/r0sesun" target="_blank" class="project-link">View my TryHackMe Profile →</a>
-            </div>
+
           </div>
         </div>
-      </section>
+      </div>
 
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+    </section>
 
-      <hr>
-      <section id="kontakt">
-        <p class="footer">
-          feel free to contact me:
-          <a href="mailto:tamarabereznakova@gmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/tamara-bere%C5%BE%C5%88%C3%A1kov%C3%A1-831357373/" target="_blank">Linkedin</a>
-          <a href="https://discord.com/users/764550867348619264" target="_blank">Discord</a>
-        </p>
-      </section>
-      <hr>
+    <br><br><br>
 
-      <script>
-        window.addEventListener("load", function () {
-          const loader = document.getElementById("loader");
-          loader.style.opacity = "0";
-          setTimeout(() => loader.style.display = "none", 500);
-        });
-      </script>
+    <!-- footer -->
+    <hr>
+    <section id="kontakt">
+      <p class="footer">
+        You can find me here: &nbsp;
+        <a href="mailto:tamarabereznakova@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/tamara-bere%C5%BE%C5%88%C3%A1kov%C3%A1-831357373/" target="_blank">LinkedIn</a>
+        <a href="https://discord.com/users/764550867348619264" target="_blank">Discord</a>
+        <a href="https://www.instagram.com/_tamaruskha_/" target="_blank">Instagram</a>
+        <a href="https://github.com/tamarabereznakova" target="_blank">GitHub</a>
+      </p>
+    </section>
+    <hr>
 
-      <script>
-        const skillsObserver = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              const fills = entry.target.querySelectorAll('.fill');
-              fills.forEach(fill => {
-                const width = fill.getAttribute('style').match(/\d+/)[0];
-                fill.style.width = width + '%';
-              });
-              skillsObserver.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.4 });
+    <!-- loader fade out -->
+    <script>
+      window.addEventListener("load", function () {
+        const loader = document.getElementById("loader");
+        loader.style.opacity = "0";
+        setTimeout(() => loader.style.display = "none", 600);
+      });
+    </script>
+ 
+    <!-- accordion -->
+    <script>
+    document.querySelectorAll('.accordion-trigger').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const acc   = btn.parentElement;
+        const body  = acc.querySelector('.accordion-body');
+        const inner = acc.querySelector('.acc-inner');
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
 
-        const skillSection = document.querySelector('.skills-container');
-        if (skillSection) skillsObserver.observe(skillSection);
-      </script>
-      
-      <script>
-      let slideIndex = 0;
+        if (isOpen) {
+          body.style.maxHeight = body.scrollHeight + 'px';
+          requestAnimationFrame(() => { body.style.maxHeight = '0'; });
+          btn.setAttribute('aria-expanded', 'false');
+          acc.classList.remove('open');
+        } else {
+          body.style.maxHeight = inner.scrollHeight + 'px';
+          btn.setAttribute('aria-expanded', 'true');
+          acc.classList.add('open');
+          body.addEventListener('transitionend', () => {
+            if (acc.classList.contains('open')) body.style.maxHeight = 'none';
+          }, { once: true });
+        }
+      });
+    });
+
+    document.querySelectorAll('.nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (!target) return;
+
+        const acc = target.querySelector('.accordion');
+
+        if (acc) {
+          const btn   = acc.querySelector('.accordion-trigger');
+          const body  = acc.querySelector('.accordion-body');
+          const inner = acc.querySelector('.acc-inner');
+
+          if (btn.getAttribute('aria-expanded') !== 'true') {
+            body.style.maxHeight = inner.scrollHeight + 'px';
+            btn.setAttribute('aria-expanded', 'true');
+            acc.classList.add('open');
+            body.addEventListener('transitionend', () => {
+              if (acc.classList.contains('open')) body.style.maxHeight = 'none';
+            }, { once: true });
+          }
+
+          acc.classList.add('nav-flash');
+          acc.addEventListener('animationend', () => acc.classList.remove('nav-flash'), { once: true });
+
+        } else {
+          const flashEl = target.querySelector('.section-box, .footer');
+          if (!flashEl) return;
+          flashEl.classList.add('nav-flash');
+          flashEl.addEventListener('animationend', () => flashEl.classList.remove('nav-flash'), { once: true });
+        }
+      });
+    });
+    </script>
+ 
+    <!-- slideshow -->
+    <script>
+      let slideIndex = 1;
       let timeout;
-
-      function showSlides(n){
-        let i;
-        let slides = document.getElementsByClassName("slide");
-        let dots = document.getElementsByClassName("dot");
-
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-
-        for (i = 0; i < dots.length; i++) {
-          dots[i].classList.remove("active");
-        }
-
+ 
+      function showSlides(n) {
+        const slides = document.getElementsByClassName("slide");
+        const dots   = document.getElementsByClassName("dot");
+        if (n > slides.length) slideIndex = 1;
+        if (n < 1) slideIndex = slides.length;
+        for (let s of slides) s.style.display = "none";
+        for (let d of dots)   d.classList.remove("active");
         slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].classList.add("active");
+        if (dots[slideIndex - 1]) dots[slideIndex - 1].classList.add("active");
         clearTimeout(timeout);
-        timeout = setTimeout(() => {
-          changeSlide(1);
-        }, 10000); // 10s
+        timeout = setTimeout(() => changeSlide(1), 10000);
       }
-
-      function changeSlide(n){
-        showSlides(slideIndex += n);
-      }
-
-      function setSlide(n){
-        showSlides(slideIndex = n);
-      }
-
-      window.onload = () => {
-        slideIndex = 1;
-        showSlides(slideIndex);
-      };
-      </script>
-
-      <script>
-        const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-              observer.unobserve(entry.target); // animácia len raz
-            }
-          });
-        }, {
-          threshold: 0.2
+ 
+      function changeSlide(n) { showSlides(slideIndex += n); }
+      function setSlide(n)    { showSlides(slideIndex = n); }
+ 
+      window.addEventListener("load", () => showSlides(slideIndex));
+    </script>
+ 
+    <!-- fade-in on scroll -->
+    <script>
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            obs.unobserve(entry.target);
+          }
         });
+      }, { threshold: 0.15 });
+ 
+      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+ 
+    <!-- cursor trail -->
+    <script>
+      const trailColors = [
+        'rgba(192,84,252,VAL)',
+        'rgba(244,114,182,VAL)',
+        'rgba(129,100,248,VAL)',
+        'rgba(232,121,249,VAL)',
+      ];
+      let colorIdx = 0;
+ 
+      window.addEventListener('mousemove', e => {
+        const dot = document.createElement('div');
+        dot.className = 'cursor-dot';
+        const color = trailColors[colorIdx % trailColors.length].replace('VAL', (0.5 + Math.random() * 0.4).toFixed(2));
+        colorIdx++;
+        dot.style.cssText = `left:${e.clientX}px;top:${e.clientY}px;background:${color};width:${5 + Math.random()*6}px;height:${5 + Math.random()*6}px;`;
+        document.body.appendChild(dot);
+        setTimeout(() => dot.remove(), 700);
+      });
+    </script>
+ 
+    <!-- hero typewriter -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const title = document.querySelector('.hero-title');
+        if (!title) return;
+        const words = title.textContent.trim().split(' ');
+        title.innerHTML = words.map((w, i) =>
+          `<span class="word" style="animation-delay:${0.1 + i * 0.08}s">${w}&nbsp;</span>`
+        ).join('');
+      });
+    </script>
 
-        document.querySelectorAll('.fade-in').forEach(el => {
-          observer.observe(el);
-        });
-      </script>
-
-    </body>
-
-  </html>
-<!--KONIEC A ZAZVONIL ZVONEC :)-->
-
-
-
-
-
-
-
-
+  </body>
+</html>
